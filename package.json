@@ -1,0 +1,44 @@
+{
+  "name": "list-deps",
+  "description": "List dependencies or devDependencies currently in packages.json. Automatically resolves the path to package.json from any directory in a project.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/list-deps",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonschlinkert/list-deps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/list-deps/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/jonschlinkert/list-deps/blob/master/LICENSE"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "load-pkg": "^0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "keywords": [
+    "dep",
+    "deps",
+    "list",
+    "package"
+  ]
+}
