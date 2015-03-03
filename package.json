@@ -1,7 +1,7 @@
 {
   "name": "list-deps",
   "description": "List the dependencies in the package.json of the current project.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/jonschlinkert/list-deps",
   "author": {
     "name": "Jon Schlinkert",
