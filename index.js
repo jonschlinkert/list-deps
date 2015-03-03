@@ -7,12 +7,12 @@
 
 'use strict';
 
-var loadPkg = require('load-pkg');
+var pkg = require('load-pkg');
 
-module.exports = function (type) {
-  var deps = loadPkg[type || 'dependencies'];
-  if (deps) {
-    return deps;
+module.exports = function listDeps(type) {
+  type = type || 'dependencies';
+  if (pkg.hasOwnProperty(type)) {
+    return pkg[type];
   }
   return {};
 };
