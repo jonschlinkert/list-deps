@@ -1,6 +1,6 @@
 {
   "name": "list-deps",
-  "description": "List dependencies or devDependencies currently in packages.json. Automatically resolves the path to package.json from any directory in a project.",
+  "description": "List the dependencies in the package.json of the current project.",
   "version": "0.2.0",
   "homepage": "https://github.com/jonschlinkert/list-deps",
   "author": {
