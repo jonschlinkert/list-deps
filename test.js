@@ -8,24 +8,19 @@
 'use strict';
 
 var should = require('should');
-var assert = require('assert');
-var listDeps = require('./');
+var deps = require('./');
 
-describe('list deps', function () {
-  it('should return dependencies from package.json:', function () {
-    listDeps().should.eql({"load-pkg": "^0.2.0"});
-  });
-
-  it('should return devDependencies from package.json:', function () {
-    listDeps('devDependencies').mocha.should.equal('*');
-  });
-
-  it('should return an empty object when nothing is found:', function () {
-    listDeps('foo').should.eql({});
-  });
-
-  it('should return an empty object when nothing is found:', function () {
-    listDeps('name').should.eql('list-deps');
-  });
+it('should return dependencies from package.json:', function () {
+  deps('dependencies').should.have.property('load-pkg');
+  deps().should.have.property('load-pkg');
 });
 
+it('should return devDependencies from package.json:', function () {
+  deps('devDependencies').mocha.should.equal('*');
+  deps('devDependencies').should.should.be.a.string;
+});
+
+it('should return an empty object when nothing is found:', function () {
+  deps('foo').should.eql({});
+  deps('name').should.eql('list-deps');
+});
